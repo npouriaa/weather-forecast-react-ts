@@ -1,9 +1,9 @@
-import { TabData } from "./DaysDetails";
 import { getDateDescription } from "../../utils/getDateDescription";
 import "../../styles/daysDetails/tab.css";
+import { ForeCastDayType } from "../Data.types";
 
 type TabsButtonsProps = {
-  data: TabData[];
+  data: ForeCastDayType[];
   activeTab: number;
   setActiveTab: (value: number) => void;
 };

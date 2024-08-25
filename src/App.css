@@ -2,8 +2,18 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   padding: 0.3rem;
   gap: 2.3rem;
+}
+
+.content {
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -11,8 +21,53 @@ footer {
 }
 
 a {
-  color: #2496E8;
+  color: #2496e8;
   text-decoration: none;
+}
+
+.warm-color {
+  color: #eb5648 !important;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #2496e8;
+  animation: prixClipFix 2s linear infinite alternate;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
 }
 
 @media (min-width: 360px) {
@@ -20,7 +75,6 @@ a {
     width: 21.5rem;
   }
 }
-
 
 @media (min-width: 480px) {
   .app {
