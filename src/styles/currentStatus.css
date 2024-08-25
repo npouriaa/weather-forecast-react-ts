@@ -1,0 +1,142 @@
+.current-weather-status-con {
+  width: 100%;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-location-con {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.date-location-con .date {
+  color: #ffffffa9;
+}
+
+.weather-condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-icon-con {
+  background: linear-gradient(to bottom, #29344f, #162340);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-degree {
+  font-size: 4rem;
+  color: #85b4ea;
+  /* color: #EB5648; */
+}
+
+.status-text {
+  max-width: 10rem;
+  word-wrap: break-word;
+}
+
+.other-details-con {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-details {
+  background-color: #1f2b47;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-details .item {
+  width: 6rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.other-details span {
+  height: 65%;
+  width: 0.1rem;
+  background-color: #15213f;
+}
+
+@media (min-width: 360px) {
+  .date-location-con {
+    width: 100%;
+  }
+  .weather-condition {
+    width: 100%;
+  }
+  .status-icon-con {
+    width: 42%;
+    height: 8.5rem;
+  }
+  .status-icon-con img {
+    height: 5rem;
+  }
+  .other-details {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 75%;
+  }
+  .other-details .item h4 {
+    font-size: 0.85rem;
+  }
+  .other-details .item p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .date-location-con {
+    width: 80%;
+  }
+  .weather-condition {
+    width: 80%;
+  }
+  .status-icon-con {
+    height: 10rem;
+    width: 45%;
+  }
+  .status-icon-con img {
+    height: 6rem;
+  }
+  .other-details {
+    width: 85%;
+    padding: 0.6rem 1.5rem;
+    height: 80%;
+  }
+  .other-details {
+    width: 80%;
+    padding: 0.6rem 1.5rem;
+    height: 75%;
+  }
+  .other-details .item h4 {
+    font-size: 1rem;
+  }
+  .other-details .item p {
+    font-size: 0.9rem;
+  }
+}

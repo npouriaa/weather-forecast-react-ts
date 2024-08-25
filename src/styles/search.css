@@ -1,7 +1,6 @@
 form {
   display: flex;
   align-items: center;
-  width: 100%;
   border: 1px solid #ffffff5d;
   border-radius: 1.3rem;
   padding: 0.6rem;
@@ -28,4 +27,16 @@ input {
 
 input::placeholder {
     color: #ffffffa5;
+}
+
+@media (min-width: 360px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  form {
+    width: 80%;
+  }
 }

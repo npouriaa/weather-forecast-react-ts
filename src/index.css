@@ -7,6 +7,8 @@
   outline: none;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 body {
@@ -22,4 +24,16 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.4rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f6b96;
+  border-radius: 0.5rem;
 }

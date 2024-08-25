@@ -1,0 +1,70 @@
+.tab-header {
+  padding: 1rem 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.4rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f6b96;
+  border-radius: 0.5rem;
+}
+
+.tab-header li {
+  background-color: #1f2b47;
+  color: #4f6b96;
+  min-width: max-content;
+  padding: 0.6rem;
+  border-radius: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.active-tab {
+  background: #2496e8 !important;
+  color: #fff !important;
+}
+
+.tab-content {
+  padding: 1rem 0;
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hour-item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2.4rem;
+  height: 9rem;
+  width: 5rem;
+  background-color: #1f2b47;
+  gap: 0.5rem;
+}
+
+.hour-item p {
+  font-size: 0.85rem;
+}
+
+.hour-item img {
+  height: 3rem;
+}
+
+.hour-item h3 {
+  color: #85b4ea;
+}
