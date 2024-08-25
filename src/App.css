@@ -3,7 +3,12 @@
   align-items: center;
   flex-direction: column;
   padding: 0.3rem;
-  gap: 2rem;
+  gap: 2.3rem;
+}
+
+a {
+  color: #2496E8;
+  text-decoration: none;
 }
 
 @media (min-width: 360px) {
