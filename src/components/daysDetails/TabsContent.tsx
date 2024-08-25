@@ -26,7 +26,7 @@ const TabsContent = ({ data, activeTab }: TabsContentProps) => {
         }}
       >
         {data[activeTab].hoursData.map((hour, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <div key={index} className="hour-item">
               <p>{hour.time.split(" ")[1]}</p>
               <img src={`${hour.icon}`} alt="condition-icon" />

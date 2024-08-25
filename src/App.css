@@ -6,6 +6,10 @@
   gap: 2.3rem;
 }
 
+footer {
+  margin-top: 2rem;
+}
+
 a {
   color: #2496E8;
   text-decoration: none;
