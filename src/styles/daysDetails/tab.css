@@ -36,14 +36,6 @@
   color: #fff !important;
 }
 
-.tab-content {
-  padding: 1rem 0;
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  align-items: center;
-}
-
 .hour-item {
   padding: 1rem;
   display: flex;
@@ -52,7 +44,7 @@
   align-items: center;
   border-radius: 2.4rem;
   height: 9rem;
-  width: 5rem;
+  width: 4.6rem;
   background-color: #1f2b47;
   gap: 0.5rem;
 }
